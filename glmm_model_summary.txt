@@ -1,0 +1,38 @@
+================================================================================
+GENERALIZED LINEAR MIXED MODEL (GLMM) ANALYSIS
+Additive Manufacturing Defects Dataset
+================================================================================
+
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:                 Defect   No. Observations:                 1560
+Model:                          Logit   Df Residuals:                     1555
+Method:                           MLE   Df Model:                            4
+Date:                Fri, 07 Nov 2025   Pseudo R-squ.:                     inf
+Time:                        19:59:19   Log-Likelihood:            -4.8902e-09
+converged:                      False   LL-Null:                        0.0000
+Covariance Type:            nonrobust   LLR p-value:                     1.000
+==============================================================================================================
+                                                 coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------
+Intercept                                    -23.8830   2.11e+04     -0.001      0.999   -4.13e+04    4.12e+04
+C(Powder, Treatment('Virgin'))[T.Recycled]     0.8147   9.22e+04   8.84e-06      1.000   -1.81e+05    1.81e+05
+C(Layout, Treatment('6X6'))[T.11X11TA]        -4.9097   8.22e+04  -5.97e-05      1.000   -1.61e+05    1.61e+05
+C(Layout, Treatment('6X6'))[T.6X6TA]          -2.0320   4.79e+04  -4.24e-05      1.000    -9.4e+04     9.4e+04
+IsEdge                                        -0.3941   2.91e+04  -1.35e-05      1.000    -5.7e+04     5.7e+04
+==============================================================================================================
+
+Complete Separation: The results show that there iscomplete separation or perfect prediction.
+In this case the Maximum Likelihood Estimator does not exist and the parameters
+are not identified.
+
+================================================================================
+ODDS RATIOS (95% Confidence Intervals)
+================================================================================
+
+                                            Coefficient    Odds Ratio  OR 95% CI Lower  OR 95% CI Upper   P-value
+Intercept                                    -23.883045  4.243510e-11              0.0              inf  0.999095
+C(Powder, Treatment('Virgin'))[T.Recycled]     0.814685  2.258463e+00              0.0              inf  0.999993
+C(Layout, Treatment('6X6'))[T.11X11TA]        -4.909661  7.374986e-03              0.0              inf  0.999952
+C(Layout, Treatment('6X6'))[T.6X6TA]          -2.032031  1.310691e-01              0.0              inf  0.999966
+IsEdge                                        -0.394091  6.742928e-01              0.0              inf  0.999989
