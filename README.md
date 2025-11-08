@@ -5,15 +5,12 @@ A lightweight data analysis project for exploring and modeling material volumes 
 ## Setup
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/yourusername/data-bussdown.git
 cd data-bussdown
 
-# 2. Create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 
-# 3. Install dependencies
 pip install -r requirements.txt
 ```
 
